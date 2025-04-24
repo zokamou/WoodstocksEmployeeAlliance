@@ -3,12 +3,23 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { AppBar, Tabs, Tab, Box, Toolbar, Typography } from '@mui/material';
 import pizza from '../images/pizza.jpeg';
+import { useRouter } from 'next/navigation'; 
 
 const Header = () => {
   const [value, setValue] = useState(0);
+  const router = useRouter(); 
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
+    if (newValue === 0) {
+      router.push('/'); 
+    } else if (newValue === 1) {
+      router.push('/who-we-are');
+    } else if (newValue === 2) {
+      router.push('/contact-us');
+    } else if (newValue === 3) {
+      router.push('/faqs');
+    }
   };
 
   return (
@@ -47,6 +58,20 @@ const Header = () => {
               },
             }}
           >
+            <Tab
+              label="Home"
+              sx={{
+                fontFamily: 'Carlito',
+                color: 'black',
+                fontSize: '16px',
+                textTransform: 'none',
+                transition: 'none',
+                '&.Mui-selected': {
+                  color: '#b82162',
+                  fontWeight: 'bold',
+                },
+              }}
+            />
             <Tab
               label="Who We Are"
               sx={{
