@@ -1,11 +1,10 @@
 "use client";
 import React from 'react';
-import { useEffect, useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
-import { Box } from '@mui/material';
+import { Box, Typography} from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 
-const ImageCarousel = ({ title, images }: { title: string, images: StaticImageData[] }) => {
+const ImageCarousel = ({ title, images }: { title: string[], images: StaticImageData[] }) => {
   
   return (
     <Box
@@ -14,7 +13,7 @@ const ImageCarousel = ({ title, images }: { title: string, images: StaticImageDa
         marginBottom: '16px',
         backgroundColor: '#f9f9f9',
         width: "100%",
-        height: "600px",
+        height: "500px",
         position: "relative", 
         overflow: "hidden",
       }}
@@ -24,7 +23,7 @@ const ImageCarousel = ({ title, images }: { title: string, images: StaticImageDa
         navButtonsAlwaysVisible
         indicators={false}
         animation="slide"
-        height="600px" 
+        height="500px" 
       >
         {images.map((image, index) => (
           <Box
@@ -32,17 +31,53 @@ const ImageCarousel = ({ title, images }: { title: string, images: StaticImageDa
             sx={{
               position: "relative",
               width: "100%",
-              height: "600px",
+              height: "500px",
             }}
           >
             <Image
               src={image}
-              alt={title}
+              alt={title[index] != null ? title[index]:"placeholder"}
               fill
               style={{
                 objectFit: "cover",
               }}
             />
+            <Box
+              sx={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                backgroundColor: 'rgba(0, 0, 0, 0.4)', // adjust darkness
+                zIndex: 1,
+              }}
+            />
+            <Box
+              sx={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                zIndex: 2,
+              }}
+            >
+              <Typography
+                variant="h3"
+                sx={{
+                  color: 'white',
+                  fontWeight: 'bold',
+                  fontFamily: 'Carlito',
+                  textShadow: '2px 2px 6px rgba(0,0,0,0.8)',
+                }}
+              >
+                {title[index]}
+              </Typography>
+            </Box>
           </Box>
         ))}
       </Carousel>

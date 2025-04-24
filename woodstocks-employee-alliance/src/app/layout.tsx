@@ -12,10 +12,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <div style={{marginTop:"80px"}}>
-        <Header/>
-      </div>
-      <body style={{ width: "100vw", height:"100vh", margin: 0 }}>{children}</body>      
+      
+      <body style={{ width: "100vw", height:"100vh", margin: 0 }}>
+        <div style={{marginTop:"80px"}}>
+          <Header/>
+        </div>
+        {children}
+      </body>      
     </html>
   );
 }

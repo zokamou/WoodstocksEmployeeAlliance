@@ -42,7 +42,7 @@ const Header = () => {
         {/* pizza logo */}
         <Box sx={{ display: 'flex', alignItems: 'center', flexDirection:"row"}}>
           <Image src={pizza} alt="Logo" width={50} height={50} />
-          <Typography sx={{color:"black", marginLeft: "20px", fontFamily:"Carlito", fontSize:"20px"}}>
+          <Typography sx={{color:"#780116", marginLeft: "26px", fontFamily:"Carlito", fontSize:"20px", fontWeight:"bold"}}>
             Woodstock's Employee Alliance
           </Typography>
         </Box>
@@ -60,59 +60,39 @@ const Header = () => {
           >
             <Tab
               label="Home"
+              className='tab-style'
               sx={{
-                fontFamily: 'Carlito',
-                color: 'black',
-                fontSize: '16px',
                 textTransform: 'none',
-                transition: 'none',
-                '&.Mui-selected': {
-                  color: '#b82162',
-                  fontWeight: 'bold',
-                },
+                fontFamily: 'Carlito',
+                fontSize: '18px'
               }}
             />
             <Tab
               label="Who We Are"
+              className='tab-style'
               sx={{
-                fontFamily: 'Carlito',
-                color: 'black',
-                fontSize: '16px',
                 textTransform: 'none',
-                transition: 'none',
-                '&.Mui-selected': {
-                  color: '#b82162',
-                  fontWeight: 'bold',
-                },
+                fontFamily: 'Carlito',
+                fontSize: '18px'
               }}
             />
 
             <Tab
               label="Contact Us"
+              className='tab-style'
               sx={{
-                fontFamily: 'Carlito',
-                color: 'black',
-                fontSize: '16px',
                 textTransform: 'none',
-                transition: 'none',
-                '&.Mui-selected': {
-                  color: '#b82162',
-                  fontWeight: 'bold',
-                },
+                fontFamily: 'Carlito',
+                fontSize: '18px'
               }}
             />
             <Tab
               label="FAQs"
+              className='tab-style'
               sx={{
-                fontFamily: 'Carlito',
-                color: 'black',
-                fontSize: '16px',
                 textTransform: 'none',
-                transition: 'none',
-                '&.Mui-selected': {
-                  color: '#b82162',
-                  fontWeight: 'bold',
-                },
+                fontFamily: 'Carlito',
+                fontSize: '18px'
               }}
             />
           </Tabs>
