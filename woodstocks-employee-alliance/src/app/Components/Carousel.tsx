@@ -71,7 +71,8 @@ const ImageCarousel = ({ title, images }: { title: string[], images: StaticImage
                 sx={{
                   color: 'white',
                   fontWeight: 'bold',
-                  fontFamily: 'Carlito',
+                  fontFamily: 'Creato Bold',
+                  marginTop:'15px',
                   textShadow: '2px 2px 6px rgba(0,0,0,0.8)',
                 }}
               >

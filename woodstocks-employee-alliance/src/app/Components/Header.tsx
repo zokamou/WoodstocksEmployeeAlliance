@@ -4,9 +4,7 @@ import Image from 'next/image';
 import { AppBar, Tabs, Tab, Box, Toolbar, Typography } from '@mui/material';
 import pizza from '../images/pizza.jpeg';
 import { useRouter } from 'next/navigation'; 
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
 
 
 const Header = () => {
@@ -48,8 +46,8 @@ const Header = () => {
         {/* pizza logo */}
         <Box sx={{ display: 'flex', alignItems: 'center', flexDirection:"row"}}>
           <Image src={pizza} alt="Logo" width={50} height={50} />
-          <Typography sx={{color:"black", marginLeft: "26px", fontSize:"26px", fontFamily:'Carlito', fontWeight:'bold'}}>
-            Woodstock's Employee Alliance
+          <Typography sx={{color:"black", marginLeft: "26px", fontSize:"28px", fontFamily:'Bebas', fontWeight:'bold'}}>
+            WOODSTOCKS EMPLOYEE ALLIANCE
           </Typography>
         </Box>
 
@@ -69,7 +67,7 @@ const Header = () => {
               className='tab-style'
               sx={{
                 textTransform: 'none',
-                fontFamily: 'Carlito',
+                fontFamily: 'Creato',
                 fontSize: '18px'
               }}
             />
@@ -78,7 +76,7 @@ const Header = () => {
               className='tab-style'
               sx={{
                 textTransform: 'none',
-                fontFamily: 'Carlito',
+                fontFamily: 'Creato',
                 fontSize: '18px'
               }}
             />
@@ -88,7 +86,7 @@ const Header = () => {
               className='tab-style'
               sx={{
                 textTransform: 'none',
-                fontFamily: 'Carlito',
+                fontFamily: 'Creato',
                 fontSize: '18px'
               }}
             />
@@ -97,7 +95,7 @@ const Header = () => {
               className='tab-style'
               sx={{
                 textTransform: 'none',
-                fontFamily: 'Carlito',
+                fontFamily: 'Creato',
                 fontSize: '18px'
               }}
             />

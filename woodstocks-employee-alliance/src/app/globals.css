@@ -33,7 +33,7 @@
   align-items: 'center';
   justify-content: 'center';
   z-index: 2;
-  font-family: 'Carlito';
+  font-family: 'Creato';
   text-decoration: 'none';
   text-transform: 'none';
 }
@@ -47,4 +47,58 @@
   font-family: "Cal Sans";
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('../../public/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Built';
+  src: url('../../public/fonts/built-titling-rg.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Creato';
+  src: url('../../public/fonts/CreatoDisplay-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Creato Bold';
+  src: url('../../public/fonts/CreatoDisplay-Bold.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} 
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('../../public/fonts/Coolvetica-Rg.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../public/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../../public/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
