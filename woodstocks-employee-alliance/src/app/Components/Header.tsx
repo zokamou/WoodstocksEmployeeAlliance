@@ -4,10 +4,16 @@ import Image from 'next/image';
 import { AppBar, Tabs, Tab, Box, Toolbar, Typography } from '@mui/material';
 import pizza from '../images/pizza.jpeg';
 import { useRouter } from 'next/navigation'; 
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
+
 
 const Header = () => {
   const [value, setValue] = useState(0);
   const router = useRouter(); 
+
+
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -42,7 +48,7 @@ const Header = () => {
         {/* pizza logo */}
         <Box sx={{ display: 'flex', alignItems: 'center', flexDirection:"row"}}>
           <Image src={pizza} alt="Logo" width={50} height={50} />
-          <Typography sx={{color:"#780116", marginLeft: "26px", fontFamily:"Carlito", fontSize:"20px", fontWeight:"bold"}}>
+          <Typography sx={{color:"black", marginLeft: "26px", fontSize:"26px", fontFamily:'Carlito', fontWeight:'bold'}}>
             Woodstock's Employee Alliance
           </Typography>
         </Box>
