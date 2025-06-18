@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ width: "100vw", height:"100vh", margin: 0 }}>
+      <body>
         <div style={{marginTop:"80px"}}>
           <Header/>
         </div>
