@@ -2,7 +2,7 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 import { Box, Typography} from '@mui/material';
-import Carousel from 'react-material-ui-carousel';
+//import Carousel from 'react-material-ui-carousel';
 
 const ImageCarousel = ({ title, images }: { title: string[], images: StaticImageData[] }) => {
   
@@ -18,13 +18,13 @@ const ImageCarousel = ({ title, images }: { title: string[], images: StaticImage
         overflow: "hidden",
       }}
     >
-      <Carousel
+      {/* <Carousel
         autoPlay={false}
         navButtonsAlwaysVisible
         indicators={false}
         animation="slide"
         height="500px" 
-      >
+      > */}
         {images.map((image, index) => (
           <Box
             key={index}
@@ -81,7 +81,7 @@ const ImageCarousel = ({ title, images }: { title: string[], images: StaticImage
             </Box>
           </Box>
         ))}
-      </Carousel>
+      {/* </Carousel> */}
     </Box>
   );
 };
