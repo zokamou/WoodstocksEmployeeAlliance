@@ -29,13 +29,7 @@
 //   );
 // }
 
-
 export default function Home() {
-  return (
-    <div style={{ width: "100vw", height:"100vh", margin: 0 }}>
-      hi
-      
-    </div>
-  );
+  return <h1>Hello from Home Page</h1>;
 }
 
