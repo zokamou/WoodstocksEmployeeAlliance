@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { AppBar, Tabs, Tab, Box, Toolbar, Typography } from '@mui/material';
-import pizza from '../../public/images/pizza.jpeg';
 import { useRouter } from 'next/navigation'; 
 
 
@@ -45,7 +44,7 @@ const Header = () => {
       }}>
         {/* pizza logo */}
         <Box sx={{ display: 'flex', alignItems: 'center', flexDirection:"row"}}>
-          <Image src={pizza} alt="Logo" width={50} height={50} />
+        <Image src="/images/pizza.jpeg" alt="Logo" width={50} height={50} />
           <Typography sx={{color:"black", marginLeft: "26px", fontSize:"28px", fontFamily:'Bebas', fontWeight:'bold'}}>
             WOODSTOCKS EMPLOYEE ALLIANCE
           </Typography>
