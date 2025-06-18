@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { AppBar, Tabs, Tab, Box, Toolbar, Typography } from '@mui/material';
-import pizza from '../images/pizza.jpeg';
+import pizza from '../../public/images/pizza.jpeg';
 import { useRouter } from 'next/navigation'; 
 
 
